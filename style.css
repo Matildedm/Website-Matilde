@@ -1,0 +1,152 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: rgb(255, 226, 241);
+}
+
+bordering {
+  border: 10px solid;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
+
+@font-face {
+  font-family: "russiano";
+  src: url("fonts/russiano-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/robotocondensed-variablefont_wght-webfont.woff")
+    format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "russiano";
+  font-weight: 100;
+  font-style: normal;
+  color: deeppink;
+  text-shadow: 5px 5px rgb(255, 255, 255);
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+}
+
+h2 {
+  font-family: "roboto";
+  font-weight: 100;
+  font-weight: bold;
+  color: rgb(253, 111, 170);
+  text-shadow: 2px 2px rgb(255, 255, 255);
+}
+/***************** farver ******************/
+
+.color1 {
+  color: rgb(239, 135, 183);
+}
+.color1 {
+  color: rgb(255, 0, 0);
+}
+.color1 {
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-block: 0.8rem;
+}
+main {
+  padding: 10px;
+}
+
+/**************** menu *************/
+
+* header {
+  position: sticky;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0px;
+  background-color: #fab6e1;
+  box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+}
+
+nav ul {
+  margin: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.logo img {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+
+  width: 50px;
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-start;
+  list-style: square;
+  margin: 15px;
+  padding: 0;
+}
+
+.menu {
+  color: white;
+  font-family: "arial";
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: flex;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #fae9e9;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+}

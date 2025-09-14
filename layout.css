@@ -1,0 +1,156 @@
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+@media (min-width: 850px) {
+  .grid_2-1test {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .order {
+    order: -1;
+  }
+}
+
+/*****************-menu-*********************/
+
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+/********************-min computer-*********************/
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/****************-operativ systemer-***************/
+
+.grid_5-3 {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  gap: 20px;
+}
+.grid_2-3 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+}
+.grid_3-2 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.order {
+  order: -1;
+}
+
+/*************-Komponenter-*************/
+
+@media (min-width: 840px) {
+  .main {
+    display: grid;
+    gap: 20px;
+  }
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .flex.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    height: 100%;
+    flex-direction: column;
+  }
+  .flex.col img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .last-child img {
+    border: 2px solid rgb(255, 255, 255);
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container:last-child {
+    margin-top: auto;
+  }
+}
+
+/******************** galleri ******************/
+@media (max-width: 800px) {
+  main {
+    display: grid;
+    gap: 20px;
+  }
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .grid_1-1-1-1 img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  /************** mobil site *************/
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .pic1 .pic4 .pic5 .pic6 {
+    grid-column: span 2;
+  }
+}
+/************* desktop *****************/
+
+@media (min-width: 840px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .order {
+    order: -1;
+  }
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .grid_1-1-1-1 img {
+    object-fit: cover;
+    align-self: stretch;
+  }
+  .pic1 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+  }
+  .pic5 {
+    grid-column: span 1;
+  }
+  .pic6 {
+    grid-column: span 3;
+  }
+}
